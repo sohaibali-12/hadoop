@@ -1,0 +1,89 @@
+# Common makefile, this file willl get inlcuded by Makefile for sub-components
+# This makefile will be responsible for setting common variables, like Build Number, Version etc
+# Build Flags
+BUILD_DATE := $(shell date -u)
+BUILD_HASH := $(shell git rev-parse --short HEAD)
+BUILD_NUMBER ?= $(BUILD_NUMBER:)
+BUILD_VERSION ?= $(BUILD_VERSION:)
+WORKSPACE ?= $(WORKSPACE:)
+# If we don't set the build number it defaults to dev
+ifeq ($(BUILD_NUMBER),)
+ BUILD_NUMBER := dev
+endif
+NOW = $(shell date -u '+%Y%m%d%I%M%S')
+DOCKER := docker
+
+ROOT_DIR ?= $(realpath $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))/../)
+
+
+#DOCKER_REGISTRY ?= 251337915507.dkr.ecr.us-west-2.amazonaws.com
+DOCKER_REGISTRY ?= host.docker.internal:5000
+
+.PHONY: ecr-login
+
+# generate script to login to aws packaging repo
+CMD_REPOLOGIN := "eval $$\( aws ecr"
+ifdef AWS_CLI_PROFILE
+CMD_REPOLOGIN += " --profile $(AWS_CLI_PROFILE)"
+endif
+ifdef AWS_CLI_REGION
+CMD_REPOLOGIN += " --region $(AWS_CLI_REGION)"
+endif
+CMD_REPOLOGIN += " get-login --no-include-email \)"
+
+# login to AWS-ECR
+ecr-login: ## Auto login to AWS-ECR unsing aws-cli
+ifneq (,$(findstring amazonaws.com,$(DOCKER_REGISTRY)))
+		echo "Login to $(DOCKER_REGISTRY)"
+		@eval $(CMD_REPOLOGIN)
+endif
+
+
+DOCKER_PUSH_TARGETS = docker-push docker-push-jenkins
+.PHONY: $(DOCKER_PUSH_TARGETS)
+docker-push: docker-tag
+docker-push-jenkins: docker-tag-jenkins
+
+$(DOCKER_PUSH_TARGETS):
+	docker push "$(DOCKER_REGISTRY)/$(IMAGE_NAME):latest"
+ifneq ($(BUILD_VERSION),)
+	docker push "$(DOCKER_REGISTRY)/$(IMAGE_NAME):$(BUILD_VERSION)"
+ifneq ($(WORKSPACE),)
+	echo "$(DOCKER_REGISTRY)/$(IMAGE_NAME):$(BUILD_VERSION)" >> $(WORKSPACE)/images.list
+endif
+endif
+
+ifneq ($(RELVERSION),)
+	docker push "$(DOCKER_REGISTRY)/$(IMAGE_NAME):rel-$(RELVERSION)"
+endif
+
+
+
+DOCKER_TAG_TARGETS = docker-tag docker-tag-jenkins
+.PHONY: $(DOCKER_TAG_TARGETS)
+# Tag docker image
+docker-tag: docker
+docker-tag-jenkins: build-image
+
+$(DOCKER_TAG_TARGETS):
+	docker tag $(IMAGE_NAME) "$(DOCKER_REGISTRY)/$(IMAGE_NAME):latest"
+
+
+ifneq ($(BUILD_VERSION),)
+	docker tag $(IMAGE_NAME) "$(DOCKER_REGISTRY)/$(IMAGE_NAME):$(BUILD_VERSION)"
+endif
+
+## Newly added release version tag
+ifneq ($(RELVERSION),)
+	docker tag $(IMAGE_NAME) "$(DOCKER_REGISTRY)/$(IMAGE_NAME):rel-$(RELVERSION)"
+endif
+
+.PHONY: docker-clean
+docker-clean:
+	docker rmi -f "$(DOCKER_REGISTRY)/$(IMAGE_NAME):latest"
+ifneq ($(BUILD_VERSION),)
+	docker rmi -f "$(DOCKER_REGISTRY)/$(IMAGE_NAME):$(BUILD_VERSION)"
+endif
+ifneq ($(RELVERSION),)
+	docker rmi -f "$(DOCKER_REGISTRY)/$(IMAGE_NAME):rel-$(RELVERSION)"
+endif

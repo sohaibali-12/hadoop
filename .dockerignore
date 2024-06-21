@@ -1,0 +1,6 @@
+dev-support/docker/build-base
+dev-support/docker/build-code
+.idea
+.github
+.gitattributes
+.gitignore

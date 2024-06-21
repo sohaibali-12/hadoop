@@ -1,5 +1,5 @@
 OWN_DIR := $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
-include $(OWN_DIR)/Makefile.common
+include $(OWN_DIR)/../Makefile.common
 IMAGE_NAME := hadoop-base
 
 $(info Directory is $(OWN_DIR))
@@ -9,11 +9,11 @@ docker: build-image
 
 .PHONY: build-image
 build-image:
-	docker build -t $(IMAGE_NAME) -f Dockerfile $(OWN_DIR)/../../
+	docker build -t $(IMAGE_NAME) -f Dockerfile $(OWN_DIR)/../../../
 
 .PHONY: build-image-no-cache
 build-image-no-cache:
-	docker build --no-cache -t -f Dockerfile $(OWN_DIR)/../../
+	docker build --no-cache -t -f Dockerfile $(OWN_DIR)/../../../
 
 
 .PHONY: docker-publish

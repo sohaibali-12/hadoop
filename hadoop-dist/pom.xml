@@ -18,7 +18,7 @@
                       https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.apache.hadoop</groupId>
+    <groupId>io.github.hafizsohaibali</groupId>
     <artifactId>hadoop-project</artifactId>
     <version>3.3.6.1</version>
     <relativePath>../hadoop-project</relativePath>
@@ -31,40 +31,40 @@
 
   <!-- Using dependencies to ensure this module is the last one -->
   <dependencies>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-common</artifactId>
       <scope>provided</scope>
     </dependency>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-hdfs-client</artifactId>
       <scope>provided</scope>
     </dependency>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-mapreduce-client-app</artifactId>
       <scope>provided</scope>
     </dependency>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-yarn-api</artifactId>
       <scope>provided</scope>
     </dependency>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-client-check-invariants</artifactId>
       <type>pom</type>
       <scope>provided</scope>
     </dependency>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-client-check-test-invariants</artifactId>
       <type>pom</type>
       <scope>provided</scope>
     </dependency>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-client-integration-tests</artifactId>
       <scope>provided</scope>
     </dependency>

@@ -16,7 +16,7 @@
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.apache.hadoop</groupId>
+  <groupId>io.github.hafizsohaibali</groupId>
   <artifactId>hadoop-main</artifactId>
   <version>3.3.6.1</version>
   <description>Apache Hadoop Main</description>
@@ -353,7 +353,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
           <version>${maven-checkstyle-plugin.version}</version>
           <dependencies>
             <dependency>
-              <groupId>org.apache.hadoop</groupId>
+              <groupId>io.github.hafizsohaibali</groupId>
               <artifactId>hadoop-build-tools</artifactId>
               <version>${hadoop.version}</version>
             </dependency>
@@ -545,7 +545,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
               <doclet>org.apache.hadoop.classification.tools.IncludePublicAnnotationsStandardDoclet</doclet>
               <docletArtifacts>
                 <docletArtifact>
-                  <groupId>org.apache.hadoop</groupId>
+                  <groupId>io.github.hafizsohaibali</groupId>
                   <artifactId>hadoop-annotations</artifactId>
                   <version>${project.version}</version>
                 </docletArtifact>

@@ -17,7 +17,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.apache.hadoop</groupId>
+    <groupId>io.github.hafizsohaibali</groupId>
     <artifactId>hadoop-project</artifactId>
     <version>3.3.6.1</version>
     <relativePath>../../hadoop-project</relativePath>
@@ -143,7 +143,7 @@
   <!-- see hadoop-project/pom.xml for version number declarations -->
   <dependencies>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-common</artifactId>
       <scope>provided</scope>
     </dependency>
@@ -220,14 +220,14 @@
     </dependency>
 
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-common</artifactId>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>
     
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-mapreduce-client-jobclient</artifactId>
       <scope>test</scope>
     </dependency>
@@ -243,7 +243,7 @@
     This is already done by MapReduce and Spark.
     -->
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-mapreduce-client-core</artifactId>
       <scope>provided</scope>
     </dependency>
@@ -253,54 +253,54 @@
     dependencies.
     -->
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-mapreduce-client-core</artifactId>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-yarn-server-tests</artifactId>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-mapreduce-client-hs</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-mapreduce-examples</artifactId>
       <scope>test</scope>
       <type>jar</type>
     </dependency>
     <!-- artifacts needed to bring up a Mini MR Yarn cluster-->
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-mapreduce-client-app</artifactId>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-mapreduce-client-app</artifactId>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-mapreduce-client-jobclient</artifactId>
       <scope>test</scope>
       <type>test-jar</type>
     </dependency>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-distcp</artifactId>
       <scope>test</scope>
     </dependency>
 
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-distcp</artifactId>
       <scope>test</scope>
       <type>test-jar</type>
@@ -324,7 +324,7 @@
       <scope>test</scope>
     </dependency>
     <dependency>
-      <groupId>org.apache.hadoop</groupId>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-minikdc</artifactId>
       <scope>test</scope>
     </dependency>
@@ -364,7 +364,7 @@
       <build>
         <plugins>
           <plugin>
-            <groupId>org.apache.hadoop</groupId>
+            <groupId>io.github.hafizsohaibali</groupId>
             <artifactId>hadoop-maven-plugins</artifactId>
             <executions>
               <execution>
@@ -527,7 +527,7 @@
       <build>
         <plugins>
           <plugin>
-            <groupId>org.apache.hadoop</groupId>
+            <groupId>io.github.hafizsohaibali</groupId>
             <artifactId>hadoop-maven-plugins</artifactId>
             <executions>
               <execution>
@@ -683,7 +683,7 @@
       <build>
         <plugins>
           <plugin>
-            <groupId>org.apache.hadoop</groupId>
+            <groupId>io.github.hafizsohaibali</groupId>
             <artifactId>hadoop-maven-plugins</artifactId>
             <executions>
               <execution>

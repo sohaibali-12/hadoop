@@ -16,7 +16,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.apache.hadoop</groupId>
+    <groupId>io.github.hafizsohaibali</groupId>
     <artifactId>hadoop-project</artifactId>
     <version>3.3.6.1</version>
     <relativePath>../../hadoop-project</relativePath>
@@ -33,8 +33,8 @@
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-annotations</artifactId>
       <scope>compile</scope>
       <exclusions>
@@ -44,8 +44,8 @@
         </exclusion>
       </exclusions>
     </dependency>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-common</artifactId>
       <scope>provided</scope>
       <exclusions>
@@ -103,28 +103,28 @@
         </exclusion>
       </exclusions>
     </dependency>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-aliyun</artifactId>
       <scope>compile</scope>
     </dependency>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-aws</artifactId>
       <scope>compile</scope>
     </dependency>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-azure</artifactId>
       <scope>compile</scope>
     </dependency>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-azure-datalake</artifactId>
       <scope>compile</scope>
     </dependency>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-cos</artifactId>
       <scope>compile</scope>
     </dependency>

@@ -18,7 +18,7 @@
                       https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>hadoop-yarn-server</artifactId>
-    <groupId>org.apache.hadoop</groupId>
+    <groupId>io.github.hafizsohaibali</groupId>
     <version>3.3.6.1</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -38,28 +38,28 @@
       <scope>compile</scope>
     </dependency>
     <!-- 'mvn dependency:analyze' fails to detect use of this dependency -->
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-common</artifactId>
       <scope>provided</scope>
     </dependency>
     <!-- 'mvn dependency:analyze' fails to detect use of this dependency -->
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-common</artifactId>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
 
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-auth</artifactId>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
 
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-minikdc</artifactId>
       <scope>provided</scope>
     </dependency>
@@ -80,18 +80,18 @@
       <scope>test</scope>
     </dependency>
     <!-- 'mvn dependency:analyze' fails to detect use of this dependency -->
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-yarn-server-common</artifactId>
     </dependency>
     <!-- 'mvn dependency:analyze' fails to detect use of this dependency -->
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-yarn-common</artifactId>
     </dependency>
     <!-- 'mvn dependency:analyze' fails to detect use of this dependency -->
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-yarn-api</artifactId>
     </dependency>
 

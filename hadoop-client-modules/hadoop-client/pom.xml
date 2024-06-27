@@ -16,7 +16,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 <parent>
-   <groupId>org.apache.hadoop</groupId>
+   <groupId>io.github.hafizsohaibali</groupId>
    <artifactId>hadoop-project-dist</artifactId>
    <version>3.3.6.1</version>
    <relativePath>../../hadoop-project-dist</relativePath>
@@ -32,8 +32,8 @@
  </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-common</artifactId>
       <scope>compile</scope>
       <exclusions>
@@ -101,8 +101,8 @@
       </exclusions>
     </dependency>
 
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-hdfs-client</artifactId>
       <scope>compile</scope>
       <exclusions>
@@ -141,8 +141,8 @@
       </exclusions>
     </dependency>
 
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-yarn-api</artifactId>
       <scope>compile</scope>
       <exclusions>
@@ -189,8 +189,8 @@
       </exclusions>
     </dependency>
 
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-yarn-client</artifactId>
       <scope>compile</scope>
       <exclusions>
@@ -249,8 +249,8 @@
       </exclusions>
     </dependency>
 
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-mapreduce-client-core</artifactId>
       <scope>compile</scope>
       <exclusions>
@@ -297,8 +297,8 @@
       </exclusions>
     </dependency>
 
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-mapreduce-client-jobclient</artifactId>
       <scope>compile</scope>
       <exclusions>
@@ -325,8 +325,8 @@
       </exclusions>
     </dependency>
 
-    <dependency>
-      <groupId>org.apache.hadoop</groupId>
+     <dependency>
+      <groupId>io.github.hafizsohaibali</groupId>
       <artifactId>hadoop-annotations</artifactId>
       <scope>compile</scope>
       <exclusions>

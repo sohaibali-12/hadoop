@@ -17,7 +17,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.github.hafizsohaibali</groupId>
+    <groupId>io.github.sohaibali-12</groupId>
     <artifactId>hadoop-project</artifactId>
     <version>3.3.6.1</version>
     <relativePath>../hadoop-project</relativePath>

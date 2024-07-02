@@ -21,7 +21,7 @@
                              https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>hadoop-yarn-server-timelineservice-hbase-server</artifactId>
-    <groupId>io.github.hafizsohaibali</groupId>
+    <groupId>io.github.sohaibali-12</groupId>
     <version>3.3.6.1</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -45,7 +45,7 @@
       </activation>
       <dependencies>
         <dependency>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-yarn-server-timelineservice-hbase-common</artifactId>
         </dependency>
 
@@ -60,19 +60,19 @@
         </dependency>
 
         <dependency>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-annotations</artifactId>
           <scope>provided</scope>
         </dependency>
 
         <dependency>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-common</artifactId>
           <scope>provided</scope>
         </dependency>
 
         <dependency>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-yarn-api</artifactId>
           <scope>provided</scope>
         </dependency>

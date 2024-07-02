@@ -21,7 +21,7 @@
                       https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>hadoop-yarn-server</artifactId>
-    <groupId>io.github.hafizsohaibali</groupId>
+    <groupId>io.github.sohaibali-12</groupId>
     <version>3.3.6.1</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -36,33 +36,33 @@
 
   <dependencies>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-common</artifactId>
       <scope>provided</scope>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-annotations</artifactId>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-yarn-api</artifactId>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-yarn-common</artifactId>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-yarn-server-common</artifactId>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-yarn-server-applicationhistoryservice</artifactId>
     </dependency>
 
@@ -119,7 +119,7 @@
 
     <!-- 'mvn dependency:analyze' fails to detect use of this dependency -->
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-common</artifactId>
       <type>test-jar</type>
       <scope>test</scope>

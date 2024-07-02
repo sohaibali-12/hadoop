@@ -18,7 +18,7 @@
                       https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <parent>
     <artifactId>hadoop-mapreduce-client</artifactId>
-    <groupId>io.github.hafizsohaibali</groupId>
+    <groupId>io.github.sohaibali-12</groupId>
     <version>3.3.6.1</version>
   </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -33,35 +33,35 @@
 
   <dependencies>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-hdfs-client</artifactId>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-hdfs</artifactId>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-mapreduce-client-common</artifactId>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-mapreduce-client-app</artifactId>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-mapreduce-client-app</artifactId>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-yarn-common</artifactId>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-hdfs</artifactId>
       <type>test-jar</type>
       <scope>test</scope>

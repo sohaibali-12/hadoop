@@ -16,7 +16,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.github.hafizsohaibali</groupId>
+    <groupId>io.github.sohaibali-12</groupId>
     <artifactId>hadoop-project</artifactId>
     <version>3.3.6.1</version>
     <relativePath>../../hadoop-project</relativePath>
@@ -39,15 +39,15 @@
 
   <dependencies>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-client-api</artifactId>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-client-runtime</artifactId>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-client-minicluster</artifactId>
     </dependency>
   </dependencies>
@@ -83,7 +83,7 @@
                     <!-- annotations is provided, and both artifacts exclude the tools transitive,
                          but enforcer still sees it.
                     -->
-                    <exclude>io.github.hafizsohaibali:hadoop-annotations</exclude>
+                    <exclude>io.github.sohaibali-12:hadoop-annotations</exclude>
                     <!-- Leave slf4j unshaded so downstream users can configure logging. -->
                     <exclude>org.slf4j:slf4j-api</exclude>
                     <!-- Leave commons-logging unshaded so downstream users can configure logging. -->
@@ -106,7 +106,7 @@
                   <findAllDuplicates>true</findAllDuplicates>
                   <dependencies>
                     <dependency>
-                      <groupId>io.github.hafizsohaibali</groupId>
+                      <groupId>io.github.sohaibali-12</groupId>
                       <artifactId>hadoop-annotations</artifactId>
                       <ignoreClasses>
                         <ignoreClass>*</ignoreClass>

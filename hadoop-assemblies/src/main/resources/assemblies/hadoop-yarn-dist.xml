@@ -232,10 +232,10 @@
   <moduleSets>
     <moduleSet>
       <includes>
-        <include>io.github.hafizsohaibali:hadoop-yarn-server-timelineservice</include>
-        <include>io.github.hafizsohaibali:hadoop-yarn-server-timelineservice-hbase-client</include>
-        <include>io.github.hafizsohaibali:hadoop-yarn-server-timelineservice-hbase-common</include>
-        <include>io.github.hafizsohaibali:hadoop-yarn-server-timelineservice-documentstore</include>
+        <include>io.github.sohaibali-12:hadoop-yarn-server-timelineservice</include>
+        <include>io.github.sohaibali-12:hadoop-yarn-server-timelineservice-hbase-client</include>
+        <include>io.github.sohaibali-12:hadoop-yarn-server-timelineservice-hbase-common</include>
+        <include>io.github.sohaibali-12:hadoop-yarn-server-timelineservice-documentstore</include>
       </includes>
       <binaries>
         <outputDirectory>share/hadoop/${hadoop.component}/timelineservice</outputDirectory>

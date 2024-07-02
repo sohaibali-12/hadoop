@@ -16,7 +16,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.github.hafizsohaibali</groupId>
+    <groupId>io.github.sohaibali-12</groupId>
     <artifactId>hadoop-project</artifactId>
     <version>3.3.6.1</version>
     <relativePath>../../hadoop-project</relativePath>
@@ -29,14 +29,14 @@
   <name>Apache Hadoop Client Test Minicluster</name>
 
   <properties>
-    <shaded.dependency.prefix>io.github.hafizsohaibali.shaded</shaded.dependency.prefix>
+    <shaded.dependency.prefix>io.github.sohaibali-12.shaded</shaded.dependency.prefix>
     <!-- We contain no source -->
     <maven.javadoc.skip>true</maven.javadoc.skip>
   </properties>
 
   <dependencies>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-client-api</artifactId>
       <scope>runtime</scope>
     </dependency>
@@ -47,7 +47,7 @@
       <scope>runtime</scope>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-client-runtime</artifactId>
       <scope>runtime</scope>
     </dependency>
@@ -59,7 +59,7 @@
     </dependency>
     <!-- Adding hadoop-annotations so we can make it optional to remove from our transitive tree -->
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-annotations</artifactId>
       <scope>compile</scope>
       <optional>true</optional>
@@ -76,7 +76,7 @@
     -->
 <!--
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-client</artifactId>
       <scope>provided</scope>
     </dependency>
@@ -85,34 +85,34 @@
          in order to work around MNG-5899
       -->
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-minicluster</artifactId>
       <optional>true</optional>
       <exclusions>
         <!-- exclude everything that comes in via the shaded runtime and api  TODO remove once we have a filter for "is in these artifacts" -->
         <!-- Skip jersey, since we need it again here. -->
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-common</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-hdfs-client</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-mapreduce-client-app</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-yarn-api</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-mapreduce-client-core</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-mapreduce-client-jobclient</artifactId>
         </exclusion>
         <!-- exclude things that came in via transitive in shaded runtime and api -->
@@ -141,11 +141,11 @@
           <artifactId>curator-client</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-mapreduce-client-common</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-yarn-common</artifactId>
         </exclusion>
         <exclusion>
@@ -229,7 +229,7 @@
         already included in hadoop-client-runtime and hadoop-client-api
          -->
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-auth</artifactId>
         </exclusion>
         <exclusion>
@@ -342,7 +342,7 @@
          to indicate that downstream folks interested in turning it on need that dep.
       -->
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-yarn-server-timelineservice</artifactId>
       <scope>runtime</scope>
       <optional>true</optional>
@@ -357,7 +357,7 @@
          Note that all of these must be marked "optional" because they won't be removed from the reduced-dependencies pom after they're included.
       -->
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-common</artifactId>
       <scope>compile</scope>
       <type>test-jar</type>
@@ -370,7 +370,7 @@
       </exclusions>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-hdfs</artifactId>
       <scope>compile</scope>
       <type>test-jar</type>
@@ -383,7 +383,7 @@
       </exclusions>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-mapreduce-client-jobclient</artifactId>
       <scope>compile</scope>
       <type>test-jar</type>
@@ -483,7 +483,7 @@
     <!-- add back in transitive dependencies of hadoop-mapreduce-client-app removed in client -->
     <!-- Skipping javax.servlet:servlet-api because it's in client -->
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-yarn-server-nodemanager</artifactId>
       <optional>true</optional>
       <exclusions>
@@ -492,19 +492,19 @@
           <artifactId>javax.servlet-api</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-yarn-api</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-yarn-common</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-registry</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-yarn-server-common</artifactId>
         </exclusion>
         <exclusion>
@@ -550,7 +550,7 @@
       </exclusions>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-yarn-server-web-proxy</artifactId>
       <optional>true</optional>
       <exclusions>
@@ -559,15 +559,15 @@
           <artifactId>javax.servlet-api</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-yarn-api</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-yarn-common</artifactId>
         </exclusion>
         <exclusion>
-          <groupId>io.github.hafizsohaibali</groupId>
+          <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-yarn-server-common</artifactId>
         </exclusion>
         <exclusion>
@@ -673,7 +673,7 @@
             <artifactId>maven-shade-plugin</artifactId>
             <dependencies>
               <dependency>
-                <groupId>io.github.hafizsohaibali</groupId>
+                <groupId>io.github.sohaibali-12</groupId>
                 <artifactId>hadoop-maven-plugins</artifactId>
                 <version>${project.version}</version>
               </dependency>
@@ -688,9 +688,9 @@
                   <artifactSet>
                     <excludes>
                       <!-- Fine to expose our already-shaded deps as dependencies -->
-                      <exclude>io.github.hafizsohaibali:hadoop-annotations</exclude>
-                      <exclude>io.github.hafizsohaibali:hadoop-client-api</exclude>
-                      <exclude>io.github.hafizsohaibali:hadoop-client-runtime</exclude>
+                      <exclude>io.github.sohaibali-12:hadoop-annotations</exclude>
+                      <exclude>io.github.sohaibali-12:hadoop-client-api</exclude>
+                      <exclude>io.github.sohaibali-12:hadoop-client-runtime</exclude>
                       <!-- Fine to expose our purposefully not-shaded deps as dependencies -->
                       <exclude>org.slf4j:slf4j-api</exclude>
                       <exclude>commons-logging:commons-logging</exclude>
@@ -743,7 +743,7 @@
                       </excludes>
                     </filter>
                     <filter>
-                      <artifact>io.github.hafizsohaibali:hadoop-mapreduce-client-jobclient:*</artifact>
+                      <artifact>io.github.sohaibali-12:hadoop-mapreduce-client-jobclient:*</artifact>
                       <excludes>
                         <exclude>testjar/*</exclude>
                         <exclude>testshell/*</exclude>
@@ -814,7 +814,7 @@
                       </excludes>
                     </filter>
                     <filter>
-                      <artifact>io.github.hafizsohaibali:*</artifact>
+                      <artifact>io.github.sohaibali-12:*</artifact>
                       <excludes>
                         <!-- No shipping log4j configs in a downstream facing library -->
                         <exclude>log4j.properties</exclude>

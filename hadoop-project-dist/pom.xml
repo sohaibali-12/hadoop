@@ -18,7 +18,7 @@
                       https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.github.hafizsohaibali</groupId>
+    <groupId>io.github.sohaibali-12</groupId>
     <artifactId>hadoop-project</artifactId>
     <version>3.3.6.1</version>
     <relativePath>../hadoop-project</relativePath>
@@ -52,7 +52,7 @@
 
   <dependencies>
     <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-annotations</artifactId>
       <scope>provided</scope>
     </dependency>
@@ -183,7 +183,7 @@
                       <destFileName>jdiff.jar</destFileName>
                     </artifactItem>
                     <artifactItem>
-                      <groupId>io.github.hafizsohaibali</groupId>
+                      <groupId>io.github.sohaibali-12</groupId>
                       <artifactId>hadoop-annotations</artifactId>
                       <version>${project.version}</version>
                       <overWrite>false</overWrite>
@@ -378,7 +378,7 @@
             <artifactId>maven-assembly-plugin</artifactId>
             <dependencies>
               <dependency>
-                <groupId>io.github.hafizsohaibali</groupId>
+                <groupId>io.github.sohaibali-12</groupId>
                 <artifactId>hadoop-assemblies</artifactId>
                 <version>${hadoop.version}</version>
               </dependency>

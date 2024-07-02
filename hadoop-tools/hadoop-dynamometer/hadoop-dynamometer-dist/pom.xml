@@ -18,7 +18,7 @@
                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.github.hafizsohaibali</groupId>
+    <groupId>io.github.sohaibali-12</groupId>
     <artifactId>hadoop-project-dist</artifactId>
     <version>3.3.6.1</version>
     <relativePath>../../../hadoop-project-dist</relativePath>
@@ -35,19 +35,19 @@
 
   <dependencies>
     <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-dynamometer-blockgen</artifactId>
       <scope>compile</scope>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-dynamometer-workload</artifactId>
       <scope>compile</scope>
       <version>${project.version}</version>
     </dependency>
     <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-dynamometer-infra</artifactId>
       <scope>compile</scope>
       <version>${project.version}</version>
@@ -84,7 +84,7 @@
             <artifactId>maven-assembly-plugin</artifactId>
             <dependencies>
               <dependency>
-                <groupId>io.github.hafizsohaibali</groupId>
+                <groupId>io.github.sohaibali-12</groupId>
                 <artifactId>hadoop-assemblies</artifactId>
                 <version>${project.version}</version>
               </dependency>

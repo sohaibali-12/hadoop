@@ -15,7 +15,7 @@
 <project>
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.github.hafizsohaibali</groupId>
+    <groupId>io.github.sohaibali-12</groupId>
     <artifactId>hadoop-project</artifactId>
     <version>3.3.6.1</version>
     <relativePath>../../hadoop-project</relativePath>
@@ -33,17 +33,17 @@
 
   <dependencies>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-common</artifactId>
       <scope>provided</scope>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-hdfs</artifactId>
       <scope>provided</scope>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-minicluster</artifactId>
       <scope>provided</scope>
     </dependency>

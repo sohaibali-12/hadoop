@@ -16,7 +16,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.github.hafizsohaibali</groupId>
+    <groupId>io.github.sohaibali-12</groupId>
     <artifactId>hadoop-project</artifactId>
     <version>3.3.6.1</version>
     <relativePath>../hadoop-project</relativePath>
@@ -30,77 +30,77 @@
 
   <dependencies>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-common</artifactId>
       <scope>compile</scope>
       <type>test-jar</type>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-hdfs</artifactId>
       <scope>compile</scope>
       <type>test-jar</type>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-yarn-server-tests</artifactId>
       <scope>compile</scope>
       <type>test-jar</type>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-mapreduce-client-jobclient</artifactId>
       <scope>compile</scope>
       <type>test-jar</type>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-common</artifactId>
       <scope>compile</scope>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-hdfs</artifactId>
       <scope>compile</scope>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-mapreduce-client-app</artifactId>
       <scope>compile</scope>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-yarn-api</artifactId>
       <scope>compile</scope>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-mapreduce-client-core</artifactId>
       <scope>compile</scope>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-mapreduce-client-jobclient</artifactId>
       <scope>compile</scope>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-mapreduce-client-hs</artifactId>
       <scope>compile</scope>
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-yarn-server-web-proxy</artifactId>
       <scope>compile</scope>
     </dependency>

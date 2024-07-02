@@ -14,7 +14,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>hadoop-yarn-applications-mawo</artifactId>
-        <groupId>io.github.hafizsohaibali.applications.mawo</groupId>
+        <groupId>io.github.sohaibali-12.applications.mawo</groupId>
         <version>3.3.6.1</version>
     </parent>
   <modelVersion>4.0.0</modelVersion>
@@ -38,12 +38,12 @@
     </dependency>
 
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-common</artifactId>
     </dependency>
 
        <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
           <artifactId>hadoop-common</artifactId>
           <type>test-jar</type>
           <scope>test</scope>

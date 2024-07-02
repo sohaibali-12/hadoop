@@ -14,12 +14,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>hadoop-yarn-applications</artifactId>
-        <groupId>io.github.hafizsohaibali</groupId>
+        <groupId>io.github.sohaibali-12</groupId>
         <version>3.3.6.1</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>io.github.hafizsohaibali.applications.mawo</groupId>
+    <groupId>io.github.sohaibali-12.applications.mawo</groupId>
     <artifactId>hadoop-yarn-applications-mawo</artifactId>
     <packaging>pom</packaging>
 

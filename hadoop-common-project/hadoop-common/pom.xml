@@ -18,7 +18,7 @@
                       https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>io.github.hafizsohaibali</groupId>
+    <groupId>io.github.sohaibali-12</groupId>
     <artifactId>hadoop-project-dist</artifactId>
     <version>3.3.6.1</version>
     <relativePath>../../hadoop-project-dist</relativePath>
@@ -43,7 +43,7 @@
       <artifactId>hadoop-shaded-protobuf_3_21</artifactId>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-annotations</artifactId>
       <scope>compile</scope>
     </dependency>
@@ -260,18 +260,18 @@
       <artifactId>gson</artifactId>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-auth</artifactId>
       <scope>compile</scope>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-auth</artifactId>
       <type>test-jar</type>
       <scope>test</scope>
     </dependency>
      <dependency>
-      <groupId>io.github.hafizsohaibali</groupId>
+      <groupId>io.github.sohaibali-12</groupId>
       <artifactId>hadoop-minikdc</artifactId>
       <scope>test</scope>
     </dependency>
@@ -499,7 +499,7 @@
         </executions>
       </plugin>
       <plugin>
-        <groupId>io.github.hafizsohaibali</groupId>
+        <groupId>io.github.sohaibali-12</groupId>
         <artifactId>hadoop-maven-plugins</artifactId>
         <executions>
           <execution>
@@ -725,7 +725,7 @@
             </executions>
           </plugin>
           <plugin>
-            <groupId>io.github.hafizsohaibali</groupId>
+            <groupId>io.github.sohaibali-12</groupId>
             <artifactId>hadoop-maven-plugins</artifactId>
             <executions>
               <execution>
@@ -919,7 +919,7 @@
       <build>
         <plugins>
           <plugin>
-            <groupId>io.github.hafizsohaibali</groupId>
+            <groupId>io.github.sohaibali-12</groupId>
             <artifactId>hadoop-maven-plugins</artifactId>
             <executions>
               <execution>
